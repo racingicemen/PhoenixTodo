@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="156px" preserveAspectRatio="none" style="width:627px;height:156px;" version="1.1" viewBox="0 0 627 156" width="627px" zoomAndPan="magnify"><defs><filter height="300%" id="fz4ptu6usfofn" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[e5cb4542a9b7aff7c3626591efadc3d5]
+class ToDo--><rect fill="#FEFECE" filter="url(#fz4ptu6usfofn)" height="137.6328" id="ToDo" style="stroke: #A80036; stroke-width: 1.5;" width="183" x="6" y="8"/><ellipse cx="77.25" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M80.7344,30.5 L73.0469,30.5 L73.0469,17.6719 L80.7344,17.6719 L80.7344,19.7188 L75.2813,19.7188 L75.2813,22.7969 L80.4063,22.7969 L80.4063,24.8281 L75.2813,24.8281 L75.2813,28.4531 L80.7344,28.4531 L80.7344,30.5 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="32" x="97.75" y="28.1543">ToDo</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="188" y1="40" y2="40"/><ellipse cx="17" cy="51" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="108" x="26" y="54.2104">description : string</text><ellipse cx="17" cy="63.8047" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="92" x="26" y="67.0151">priority : integer</text><ellipse cx="17" cy="76.6094" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="154" x="26" y="79.8198">create_datetime : datetime</text><ellipse cx="17" cy="89.4141" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="139" x="26" y="92.6245">due_datetime : datetime</text><ellipse cx="17" cy="102.2188" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="157" x="26" y="105.4292">update_datetime : datetime</text><ellipse cx="17" cy="115.0234" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="143" x="26" y="118.2339">category : Category «FK»</text><ellipse cx="17" cy="127.8281" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="116" x="26" y="131.0386">status : Status «FK»</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="188" y1="137.6328" y2="137.6328"/><!--MD5=[a96594a83e2ecdc78cbf17c2ddf01934]
+class Category--><rect fill="#FEFECE" filter="url(#fz4ptu6usfofn)" height="60.8047" id="Category" style="stroke: #A80036; stroke-width: 1.5;" width="134" x="353.5" y="46.5"/><ellipse cx="389.2" cy="62.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M392.6844,69 L384.9969,69 L384.9969,56.1719 L392.6844,56.1719 L392.6844,58.2188 L387.2313,58.2188 L387.2313,61.2969 L392.3563,61.2969 L392.3563,63.3281 L387.2313,63.3281 L387.2313,66.9531 L392.6844,66.9531 L392.6844,69 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="56" x="407.8" y="66.6543">Category</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="354.5" x2="486.5" y1="78.5" y2="78.5"/><ellipse cx="364.5" cy="89.5" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="108" x="373.5" y="92.7104">description : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="354.5" x2="486.5" y1="99.3047" y2="99.3047"/><!--MD5=[e3d83ec5fd90ea9f3f2bfe265cb53458]
+class Status--><rect fill="#FEFECE" filter="url(#fz4ptu6usfofn)" height="112.0234" id="Status" style="stroke: #A80036; stroke-width: 1.5;" width="93" x="523" y="21"/><ellipse cx="547" cy="37" fill="#EB937F" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M550.4844,43.5 L542.7969,43.5 L542.7969,30.6719 L550.4844,30.6719 L550.4844,32.7188 L545.0313,32.7188 L545.0313,35.7969 L550.1563,35.7969 L550.1563,37.8281 L545.0313,37.8281 L545.0313,41.4531 L550.4844,41.4531 L550.4844,43.5 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="41" x="563" y="41.1543">Status</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="524" x2="615" y1="53" y2="53"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="81" x="529" y="67.2104">NOT_STARTED</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51" x="529" y="80.0151">STARTED</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="68" x="529" y="92.8198">COMPLETED</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="53" x="529" y="105.6245">OVERDUE</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="70" x="529" y="118.4292">ABANDONED</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="524" x2="615" y1="125.0234" y2="125.0234"/><!--MD5=[7fdc59f4da4359057bdcc1f39f02070c]
+link ToDo to Category--><path d="M197.25,77 C245.04,77 301.31,77 345.4,77 " fill="none" id="ToDo-Category" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="349.49" x2="349.49" y1="73" y2="81"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="346.49" x2="346.49" y1="73" y2="81"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="345.49" x2="353.49" y1="77" y2="77"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="197.19" x2="189.19" y1="77" y2="83"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="197.19" x2="189.19" y1="77" y2="71"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="197.19" x2="189.19" y1="77" y2="77"/><ellipse cx="203.19" cy="77" fill="none" rx="4" ry="4" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[7f8d075724adac622dfa51d8482cc77a]
+@startuml TodoClassDiagram
+
+entity ToDo
+{
+    * description : string
+    * priority : integer
+    * create_datetime : datetime
+    * due_datetime : datetime
+    * update_datetime : datetime
+    * category : Category <<FK>>
+    * status : Status <<FK>>
+}
+
+entity Category
+{
+    * description : string
+}
+
+enum Status {
+    NOT_STARTED
+    STARTED
+    COMPLETED
+    OVERDUE
+    ABANDONED
+}
+
+ToDo }o-|| Category : \t\t\t\t 
+
+@enduml
+
+PlantUML version 1.2020.10(Sun May 17 02:35:57 PDT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 14.0.2+12
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

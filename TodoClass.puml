@@ -1,0 +1,29 @@
+@startuml TodoClassDiagram
+
+entity ToDo
+{
+    * description : string
+    * priority : integer
+    * create_datetime : datetime
+    * due_datetime : datetime
+    * update_datetime : datetime
+    * category : Category <<FK>>
+    * status : Status <<FK>>
+}
+
+entity Category
+{
+    * description : string
+}
+
+enum Status {
+    NOT_STARTED
+    STARTED
+    COMPLETED
+    OVERDUE
+    ABANDONED
+}
+
+ToDo }o-|| Category : \t\t\t\t 
+
+@enduml
