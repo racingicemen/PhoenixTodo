@@ -14,3 +14,7 @@ alias PhoenixTodo.TaskManager
 for category <- ~w(Orange Yellow Green Blue Indigo Violet) do
   TaskManager.create_category!(category)
 end
+
+for status <- ~w(NOT_STARTED STARTED COMPLETED OVERDUE ABANDONED) do
+  TaskManager.create_status!(status)
+end

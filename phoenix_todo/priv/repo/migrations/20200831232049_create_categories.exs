@@ -8,5 +8,6 @@ defmodule PhoenixTodo.Repo.Migrations.CreateCategories do
       timestamps()
     end
 
+    create unique_index(:categories, [:description])
   end
 end

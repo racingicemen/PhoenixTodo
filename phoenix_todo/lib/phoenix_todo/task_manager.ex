@@ -155,6 +155,10 @@ defmodule PhoenixTodo.TaskManager do
     |> Repo.insert()
   end
 
+  def create_status!(description) do
+    Repo.insert!(%Status{description: description}, on_conflict: :nothing)
+  end
+
   @doc """
   Updates a status.
 

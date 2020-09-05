@@ -8,5 +8,6 @@ defmodule PhoenixTodo.Repo.Migrations.CreateStatus do
       timestamps()
     end
 
+    create unique_index(:status, [:description])
   end
 end
