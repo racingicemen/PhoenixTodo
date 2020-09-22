@@ -9,13 +9,15 @@ defmodule PhoenixTodo.TaskManager.ToDo do
     belongs_to :category, PhoenixTodo.TaskManager.Category
     belongs_to :status, PhoenixTodo.TaskManager.Status
 
-    timestamps()
+    timestamps(inserted_at: :create_datetime, updated_at: :update_datetime)
   end
 
   @doc false
   def changeset(to_do, attrs) do
     to_do
-    |> cast(attrs, [:description, :priority, :due_datetime])
+    |> cast(attrs, [:description, :priority, :category_id, :status_id, :due_datetime])
     |> validate_required([:description, :priority, :due_datetime])
+    |> assoc_constraint(:category)
+    |> assoc_constraint(:status)
   end
 end

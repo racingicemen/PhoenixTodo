@@ -59,6 +59,12 @@ defmodule PhoenixTodo.TaskManager do
     Repo.insert!(%Category{description: description}, on_conflict: :nothing)
   end
 
+  def list_alphabetical_categories do
+    Category
+    |> Category.alphabetical()
+    |> Repo.all()
+  end
+
   @doc """
   Updates a category.
 
