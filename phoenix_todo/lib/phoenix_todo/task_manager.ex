@@ -7,6 +7,8 @@ defmodule PhoenixTodo.TaskManager do
   alias PhoenixTodo.Repo
 
   alias PhoenixTodo.TaskManager.Category
+  alias PhoenixTodo.TaskManager.Status
+  alias PhoenixTodo.TaskManager.ToDo
 
   @doc """
   Returns the list of categories.
@@ -112,7 +114,6 @@ defmodule PhoenixTodo.TaskManager do
     Category.changeset(category, attrs)
   end
 
-  alias PhoenixTodo.TaskManager.Status
 
   @doc """
   Returns the list of status.
@@ -212,8 +213,6 @@ defmodule PhoenixTodo.TaskManager do
     Status.changeset(status, attrs)
   end
 
-  alias PhoenixTodo.TaskManager.ToDo
-
   @doc """
   Returns the list of todos.
 
@@ -224,7 +223,9 @@ defmodule PhoenixTodo.TaskManager do
 
   """
   def list_todos do
-    Repo.all(ToDo)
+    ToDo
+    |> Repo.all()
+    |> Repo.preload([:category, :status])
   end
 
   @doc """
@@ -241,7 +242,11 @@ defmodule PhoenixTodo.TaskManager do
       ** (Ecto.NoResultsError)
 
   """
-  def get_to_do!(id), do: Repo.get!(ToDo, id)
+  def get_to_do!(id) do
+    ToDo
+    |> Repo.get!(id)
+    |> Repo.preload([:category, :status])
+  end
 
   @doc """
   Creates a to_do.

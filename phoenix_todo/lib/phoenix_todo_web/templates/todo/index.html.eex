@@ -13,8 +13,8 @@
   <%= for todo <- @todos do %>
     <tr>
       <td><%= todo.description %></td>
-      <td><%= todo.category_id %></td>
-      <td><%= todo.status_id %></td>
+      <td><%= todo.category.description %></td>
+      <td><%= todo.status.description %></td>
       <td>
         <%= link "Edit",   to: Routes.todo_path(@conn, :index),
                             class: "button" %>

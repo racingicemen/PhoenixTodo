@@ -30,15 +30,12 @@ defmodule PhoenixTodoWeb.TodoController do
         |> redirect(to: Routes.todo_path(conn, :show, todo))
 
       {:error, %Ecto.Changeset{} = changeset} ->
-        IO.puts("what the fuck is still going on?")
-        IO.inspect(changeset)
         render(conn, "new.html", changeset: changeset)
     end
   end
 
   def show(conn, %{"id" => id}) do
     todo = TaskManager.get_to_do!(id)
-    IO.puts("I got the fuck here")
     render(conn, "show.html", todo: todo)
   end
 
