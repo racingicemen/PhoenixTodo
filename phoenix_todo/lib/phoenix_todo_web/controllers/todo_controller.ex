@@ -39,6 +39,26 @@ defmodule PhoenixTodoWeb.TodoController do
     render(conn, "show.html", todo: todo)
   end
 
+  def edit(conn, %{"id" => id}) do
+    todo = TaskManager.get_to_do!(id)
+    changeset = TaskManager.change_to_do(todo)
+    render(conn, "edit.html", todo: todo, changeset: changeset)
+  end
+
+  def update(conn, %{"id" => id, "to_do" => todo_params}) do
+    todo = TaskManager.get_to_do!(id)
+
+    case TaskManager.update_to_do(todo, todo_params) do
+      {:ok, todo} ->
+        conn
+        |> put_flash(:info, "Todo updated successfully.")
+        |> redirect(to: Routes.todo_path(conn, :show, todo))
+
+      {:error, %Ecto.Changeset{} = changeset} ->
+        render(conn, "edit.html", todo: todo, changeset: changeset)
+    end
+  end
+
   defp load_categories(conn, _) do
     assign(conn, :categories, TaskManager.list_alphabetical_categories())
   end

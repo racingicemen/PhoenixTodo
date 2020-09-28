@@ -9,7 +9,7 @@
 
   <li>
     <strong>Category:</strong>
-    <%= @todo.category_id %>
+    <%= @todo.category.description %>
   </li>
 
 </ul>

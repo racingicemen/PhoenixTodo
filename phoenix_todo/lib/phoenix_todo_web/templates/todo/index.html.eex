@@ -16,7 +16,7 @@
       <td><%= todo.category.description %></td>
       <td><%= todo.status.description %></td>
       <td>
-        <%= link "Edit",   to: Routes.todo_path(@conn, :index),
+        <%= link "Edit",   to: Routes.todo_path(@conn, :edit, todo),
                             class: "button" %>
       </td>
     </tr>
